@@ -3,7 +3,7 @@ project "yaml-cpp"
     language "C++"
     cppdialect "C++17"
     staticruntime "on"
-    warnings "extra"
+    warnings "off"
 
     configureProjectProperties("%{prj.name}")
 
