@@ -4,6 +4,10 @@ project "yaml-cpp"
     cppdialect "C++17"
     staticruntime "on"
     warnings "off"
+    location "%{wks.location}"
+    if (_ACTION == "xcode4") then
+        Utils.SetXCodeBuildSettings("yamp-cpp", {})
+    end
 
     configureProjectProperties("%{prj.name}")
 
