@@ -24,14 +24,6 @@ project "yaml-cpp"
         "include"
     }
 
-
-    filter { "action:xcode*" }
-        XCodeBuildSettings =
-        {
-        }
-        merge(XCodeBuildSettings, OS.XCodeBuildSettings)
-        xcodebuildsettings (XCodeBuildSettings)
-
     filter "system:windows"
         systemversion "latest"
         cppdialect "C++17"
