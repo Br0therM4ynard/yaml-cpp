@@ -6,7 +6,7 @@ project "yaml-cpp"
     warnings "off"
     location "%{wks.location}"
     if (_ACTION == "xcode4") then
-        Utils.SetXCodeBuildSettings("yamp-cpp", {})
+        Utils.SetXCodeBuildSettings("yaml-cpp", {})
     end
 
     configureProjectProperties("%{prj.name}")
